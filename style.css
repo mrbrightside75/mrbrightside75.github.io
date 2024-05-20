@@ -1,0 +1,150 @@
+/*https://coolors.co/01161e-124559-598392-d5e4f5-dac4f7*/
+
+:root {
+    --darkPurple: #221b39;
+    --lavenderFloral: #ae8ee4;
+    --wisteria: #caabe7;
+    --specialViolet: #ef86e3;
+    --lapisLazuli: #456990;
+    --ashGray: #b6d6cc;
+}
+.test {
+    color: aqua;
+}
+body {
+    background-color: #221b39;
+}
+.navbar-brand img {
+    height: 50px;
+}
+.navbar {
+    background-color: var(--darkpurple) !important;
+    .navbar-nav {
+        margin-left: auto;
+    }
+}
+nav {
+    font-size: 23px;
+    a {
+        color: var(--specialViolet) !important;
+    }
+    .navbar-toggler,
+    .navbar-toggler-icon-bg {
+        color: var(--specialViolet) !important;
+    }
+    button {
+        background-color: var(--specialViolet) !important;
+    }
+}
+#intro {
+    color: var(--lavenderFloral);
+    font-family: "Roboto", sans-serif;
+    height: 80vh;
+    img {
+        width: 250px;
+        border-radius: 100000px;
+        border: 5px solid var(--specialViolet);
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+}
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+#intro h1 {
+    color: var(--specialViolet);
+    font-weight: bold;
+    font-family: "Jersey 25", sans-serif;
+    font-size: 72px;
+    animation: fadein ease-in 1s;
+}
+#intro h3,
+#intro p {
+    font-size: 30px;
+    animation-delay: 1s;
+    animation-name: fadein;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+#intro code {
+    margin-top: 20px;
+    font-size: 30px;
+    text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+    #intro h1 {
+        font-size: 48px;
+    }
+
+    #intro code {
+        font-size: 16px;
+    }
+}
+#arrowDown {
+    font-size: 75px;
+    position: absolute;
+    bottom: 30px;
+    left: calc(50% - 37.5px);
+}
+#about {
+    color: white;
+    background: #124559;
+    padding: 30px;
+
+    p {
+        font-size: 20px;
+    }
+}
+#contact {
+    background: #598392;
+    color: white;
+    padding: 30px;
+    .row {
+        margin-bottom: 15px;
+    }
+    a {
+        color: white;
+    }
+
+    input,
+    textarea {
+        padding: 10px;
+        width: 100%;
+    }
+    .btn {
+        width: 100%;
+    }
+}
+section {
+    padding: 20px;
+}
+#portfolio {
+    padding: 30px;
+    background: #d5e4f5;
+}
+footer {
+    /* padding: 30px; */
+    background: var(--darkPurple);
+    color: var(--wisteria);
+    align-items: flex-end;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+/* Weather.html */
+#project {
+    background-color: var(--lapisLazuli);
+    color: white;
+}
+.badge {
+    background-color: black;
+    margin-right: 5px;
+}
